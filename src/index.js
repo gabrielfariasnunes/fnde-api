@@ -2,8 +2,8 @@ const app = require("express")();
 const compression = require("compression")
 const helmet = require("helmet")
 
-const  { environments } = require("./src/config/env");
-const { routes } = require("./src/routes/api.routes");
+const  { environments } = require("./config/env");
+const { routes } = require("./routes/api.routes");
 
 app.use(compression());
 app.use(helmet())
