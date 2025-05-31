@@ -6,7 +6,6 @@
     "dev": "nodemon ./src/index.js"    
   },
   "imports": {
-    "#server": "./src/server.js",
     "#server/controllers": "./src/controllers/api.controllers.js",
     "#server/routes": "./src/routes/api.routes.js",
     "#server/services": "./src/services/fnde.service.js"
