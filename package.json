@@ -1,0 +1,25 @@
+{
+  "name": "fnde-api",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"    
+  },
+  "imports": {
+    "#server": "./src/server.js",
+    "#server/controllers": "./src/controllers/api.controllers.js",
+    "#server/routes": "./src/routes/api.routes.js",
+    "#server/services": "./src/services/fnde.service.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "compression": "^1.8.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
+}
