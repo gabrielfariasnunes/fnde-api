@@ -14,16 +14,19 @@ module.exports = {
                 let entities    = Object.values(payments.data.programas[0].entidades)
                 let functions   = Object.values(entities[0].funcoes)
 
-                resolve({
+                const buildStudent = {
                     id: person.data.pessoas[0].hash,
                     cpf: person.data.pessoas[0].cpf,
-                    nome: person.data.pessoas[0].nome,
+                    name: person.data.pessoas[0].nome,
                     municipio: payments.data.municipio,
                     uf: payments.data.uf,
-                    atualizacao: payments.data.dataAtualizacao,
-                    total_pago: payments.data.total,
-                    pagamentos: functions[0].pagamentos
-                })
+                    update: payments.data.dataAtualizacao,
+                    totalPayments: payments.data.total,
+                    payments: functions[0].pagamentos
+                }
+
+                resolve(buildStudent);
+
             } catch (error) {
                 reject(error)
             }

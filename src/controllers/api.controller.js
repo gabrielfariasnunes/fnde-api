@@ -1,4 +1,4 @@
-const { fetchStudentPayments }  = require("../services/fnde.service")
+const { fetchStudentPayments }  = require("#services")
 const { HTTP_OK, HTTP_NOT_FOUND } = require("../config/constants")
 
 module.exports = {

@@ -13,7 +13,7 @@ npm run start
 
 ### Acesse a api aqui: 
 ```
-https://fnde-consultas-bolsas-api.onrender.com/v1/pagamentos/[SEU-CPF]
+https://fnde-api.vercel.app/api/payments/[CPF]
 ```
 
 
